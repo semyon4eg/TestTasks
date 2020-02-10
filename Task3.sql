@@ -1,0 +1,1 @@
+SELECT ref_film.name FROM ref_film INNER JOIN ref_film_lnk_genre ON ref_film.id = ref_film_lnk_genre.film_id LEFT JOIN ref_genre ON ref_film_lnk_genre.genre_id = ref_genre.id WHERE ref_genre.name = "Боевик";
